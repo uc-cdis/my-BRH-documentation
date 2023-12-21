@@ -8,13 +8,11 @@
       
       
       
-        <link rel="canonical" href="https://brh.data-commons.org/08-discovery_page/">
+        <link rel="canonical" href="https://brh.data-commons.org/nextflow-upload-docker/">
       
       
-        <link rel="prev" href="../07-how_to_check_request_access/">
+        <link rel="prev" href="../nextflow-request-creds/">
       
-      
-        <link rel="next" href="../10-profile_page/">
       
       
       <link rel="icon" href="../img/favicon.ico">
@@ -22,7 +20,7 @@
     
     
       
-        <title>Discovery Page - Biomedical Research Hub Documentation</title>
+        <title>Nextflow - Upload Dockerfile - Biomedical Research Hub Documentation</title>
       
     
     
@@ -79,7 +77,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#discovery-page" class="md-skip">
+        <a href="#pushing-container-images-to-aws-ecr" class="md-skip">
           Skip to content
         </a>
       
@@ -114,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Discovery Page
+              Nextflow - Upload Dockerfile
             
           </span>
         </div>
@@ -288,8 +286,6 @@
       
   
   
-    
-  
   
     
     
@@ -310,12 +306,12 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -329,7 +325,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             How to Get Started
@@ -420,29 +416,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Discovery Page
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../08-discovery_page/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -451,47 +427,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#search-features" class="md-nav__link">
-    Search Features
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#find-available-study-level-metadata" class="md-nav__link">
-    Find available Study-level Metadata
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#find-accessible-datasets" class="md-nav__link">
-    Find accessible Datasets
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -784,6 +719,8 @@
       
   
   
+    
+  
   
     
     
@@ -802,12 +739,12 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
         
           
           <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
@@ -821,7 +758,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             
@@ -912,9 +849,29 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../nextflow-upload-docker/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Nextflow - Upload Dockerfile
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -923,6 +880,109 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#timing" class="md-nav__link">
+    Timing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#set-aws-environment-variables" class="md-nav__link">
+    Set AWS Environment Variables:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verify-configuration" class="md-nav__link">
+    Verify Configuration:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#logging-in-to-ecr" class="md-nav__link">
+    Logging in to ECR
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pushing-your-docker-image" class="md-nav__link">
+    Pushing Your Docker Image
+  </a>
+  
+    <nav class="md-nav" aria-label="Pushing Your Docker Image">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tag-your-docker-image" class="md-nav__link">
+    Tag Your Docker Image:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#push-the-image" class="md-nav__link">
+    Push the Image:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#completion" class="md-nav__link">
+    Completion
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#support" class="md-nav__link">
+    Support
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -962,22 +1022,84 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#search-features" class="md-nav__link">
-    Search Features
+  <a href="#overview" class="md-nav__link">
+    Overview
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#find-available-study-level-metadata" class="md-nav__link">
-    Find available Study-level Metadata
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#find-accessible-datasets" class="md-nav__link">
-    Find accessible Datasets
+  <a href="#timing" class="md-nav__link">
+    Timing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#set-aws-environment-variables" class="md-nav__link">
+    Set AWS Environment Variables:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verify-configuration" class="md-nav__link">
+    Verify Configuration:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#logging-in-to-ecr" class="md-nav__link">
+    Logging in to ECR
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pushing-your-docker-image" class="md-nav__link">
+    Pushing Your Docker Image
+  </a>
+  
+    <nav class="md-nav" aria-label="Pushing Your Docker Image">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tag-your-docker-image" class="md-nav__link">
+    Tag Your Docker Image:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#push-the-image" class="md-nav__link">
+    Push the Image:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#completion" class="md-nav__link">
+    Completion
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#support" class="md-nav__link">
+    Support
   </a>
   
 </li>
@@ -1000,30 +1122,64 @@
   
 
 
-<div><h1 id="discovery-page"><strong>Discovery Page</strong><a class="headerlink" href="#discovery-page" title="Permanent link">¶</a></h1>
-<p>The <a href="https://brh.data-commons.org/discovery">Discovery Page</a> provides users a venue to search and find studies and datasets displayed on the Biomedical Research Hub. Users can <strong>browse through the publicly accessible study-level metadata</strong> without requiring authorization.</p>
+<div><p><a href="https://www.nextflow.io/"><img alt="Nextflow logo" src="/img/nextflow.svg" style="height:75px"></a></p>
+<h1 id="pushing-container-images-to-aws-ecr"><strong>Pushing Container Images to AWS ECR</strong><a class="headerlink" href="#pushing-container-images-to-aws-ecr" title="Permanent link">¶</a></h1>
+<h3 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¶</a></h3>
+<p>This guide is for external users who have received temporary credentials granting access to push container images to a specific AWS Elastic Container Registry (ECR) repository.</p>
+<h3 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">¶</a></h3>
+<ul>
+<li><a href="https://www.docker.com/get-started/">Docker</a> installed on your local machine.</li>
+<li><a href="https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html">AWS CLI</a> installed locally</li>
+<li>Temporary AWS credentials provided by the User Services team.</li>
+<li>The URI of the ECR repository you have been given access to (should have been shared with you along with the AWS credentials)</li>
+<li>A container you want to push.</li>
+</ul>
+<h3 id="timing">Timing<a class="headerlink" href="#timing" title="Permanent link">¶</a></h3>
+<p>Your temporary AWS credentials only lasts for 1 hour from when they were created; User Services should have provided an expiration time when sharing the credentials with you. You must fully complete the push to ECR before they expire, or you will need to request new credentials from User Services.</p>
+<h3 id="set-aws-environment-variables">Set AWS Environment Variables:<a class="headerlink" href="#set-aws-environment-variables" title="Permanent link">¶</a></h3>
+<p>Before you can push your Docker image to the ECR repository, you need to configure the AWS CLI with the temporary credentials you received. Here's how you can do that:</p>
+<p>Replace <code>&lt; AccessKeyId &gt;</code>, <code>&lt; SecretAccessKey &gt;</code>, and <code>&lt; SessionToken &gt;</code> with the credentials provided to you.</p>
+<pre><code>  export AWS_ACCESS_KEY_ID=&lt;AccessKeyId&gt;
+  export AWS_SECRET_ACCESS_KEY=&lt;SecretAccessKey&gt;
+  export AWS_SESSION_TOKEN=&lt;SessionToken&gt;
+</code></pre>
 <blockquote>
-<p>Use text-based search, faceted search, and tags to rapidly and efficiently find relevant studies, discover new datasets across multiple resources, and easily export selected data files to the analysis workspace. Browse through datasets and study-level metadata and find studies using tags, advanced search, or the free text search field.</p>
+<p>Note: the variables are set only as long as the terminal is open; export the variables again if you close and open a new terminal.</p>
 </blockquote>
-<p><img alt="The Discovery Page of the Biomedical Research Hub." src="../img/grid_discovery_color_080322.png"></p>
-<h2 id="search-features">Search Features<a class="headerlink" href="#search-features" title="Permanent link">¶</a></h2>
-<p>On the Discovery page, several features help you navigate and refine your search.</p>
-<p><img alt="Screenshot of discovery page, highlighting different search features" src="../img/discovery_features_080322.png"></p>
-<ol>
-<li><strong>Total number of studies:</strong> shows the number of studies the BRH is currently displaying.</li>
-<li><strong>Total number of subjects:</strong> shows the number of subjects the BRH is currently displaying.</li>
-<li><strong>Free Text Search:</strong> Use keywords or tags in the free-text-based search bar to find studies. The free-text search bar can be used to search for study name, ID number, Data Commons, or any keyword that is mentioned in the metadata of the study.</li>
-<li><strong>Data Resources/Data Commons Tags:</strong> view these by selecting "Study Characteristics". Click on a tag to filter by a Data Resource/Data Commons. Selecting multiple tags works in an "OR" logic (e.g., "find AnVIL OR BioData Catalyst studies").</li>
-<li><strong>Export Options:</strong> Login first to leverage the export options. Select one or multiple studies and download a file manifest or export the data files to a secure cloud environment "Workspace" to start your custom data analysis in Python or R.</li>
-<li><strong>Data Availability:</strong> Filter on available, pending, and not-yet-available datasets.</li>
-<li><strong>Studies:</strong> This table feature presents all current studies on BRH. Click on any study to show useful information about the study (metadata).</li>
-</ol>
-<h2 id="find-available-study-level-metadata">Find available Study-level Metadata<a class="headerlink" href="#find-available-study-level-metadata" title="Permanent link">¶</a></h2>
-<p>Clicking on any study will display the available study-level and dataset metadata.</p>
-<p><img alt="Screenshot of metadata seen by clicking on study in Discovery page." src="../img/discovery_study_page_datafiles.png"></p>
-<h2 id="find-accessible-datasets">Find accessible Datasets<a class="headerlink" href="#find-accessible-datasets" title="Permanent link">¶</a></h2>
-<p>Users can select and filter studies from multiple resources and conduct analyses on the selected datasets in a workspace. Users can search but not interact with data they do not have access to. By selecting the data access button in the top right corner of the study page user access can be displayed. The Discovery Page will automatically update the list of studies that are accessible.</p>
-<!-- Links and Images --></div>
+<h3 id="verify-configuration">Verify Configuration:<a class="headerlink" href="#verify-configuration" title="Permanent link">¶</a></h3>
+<p>Run <code>aws sts get-caller-identity</code> to verify that your CLI is using the temporary credentials.</p>
+<h3 id="logging-in-to-ecr">Logging in to ECR<a class="headerlink" href="#logging-in-to-ecr" title="Permanent link">¶</a></h3>
+<p>Use the AWS CLI to retrieve an authentication token and authenticate your Docker client to your registry.</p>
+<pre><code> aws ecr get-login-password --region &lt;region&gt; | docker login --username AWS --password-stdin &lt;repositoryUri&gt;
+</code></pre>
+<p>Replace <code>&lt; region &gt;</code> with <code>us-east-1</code>, and <code>&lt; repositoryUri &gt;</code> with the URI of the ECR repository you've been given access to.</p>
+<h2 id="pushing-your-docker-image">Pushing Your Docker Image<a class="headerlink" href="#pushing-your-docker-image" title="Permanent link">¶</a></h2>
+<h3 id="tag-your-docker-image">Tag Your Docker Image:<a class="headerlink" href="#tag-your-docker-image" title="Permanent link">¶</a></h3>
+<p>Tag your local Docker image with the ECR repository URI and the image tag you want to use.</p>
+<pre><code> docker tag &lt;local-image&gt;:&lt;local-tag&gt; &lt;repositoryUri&gt;:&lt;image-tag&gt;
+</code></pre>
+<p>Replace <code>&lt; local-image &gt;</code> with the name of your local Docker image and <code>&lt; local-tag &gt;</code> with the tag you want to push.</p>
+<blockquote>
+<p>If you're not sure what your local image and tag names are, you can run <code>docker images</code> in your terminal. It will provide a list of all your saved docker images. The column called <code>REPOSITORY</code> is the local image name. The column called <code>TAG</code> is the local tag name for this image.</p>
+</blockquote>
+<p>Replace <code>&lt; repositoryUri &gt;</code> with the ECR repository URI provided by User Services, and <code>&lt; image-tag &gt;</code> with  the image tag name you want to use in your ECR.</p>
+<blockquote>
+<p>Important note: If you do not want the most-recently-pushed image to replace an earlier version with the same tag in your ECR, image-tags should be unique.
+For example, you create an image with an image-tag <code>batch-poc</code>. If you later push another image to <code>&lt; repositoryUri &gt;:batch-poc</code>, it will overwrite the previous version of the image in your ECR (you will only have 1 container with the tag "batch-poc").
+If you do not want to overwrite, you can use versioned image-tags. For example: <code>batch-poc-1.0</code>, and then <code>batch-poc-1.1</code>.
+If you want to replace previous versions of your container, you can use the same image-tag.</p>
+</blockquote>
+<h3 id="push-the-image">Push the Image:<a class="headerlink" href="#push-the-image" title="Permanent link">¶</a></h3>
+<p>Push the tagged image to the ECR repository.</p>
+<pre><code> docker push &lt;repositoryUri&gt;:&lt;image-tag&gt;
+</code></pre>
+<p>If the <strong>push is successful</strong>, you will see various "layer 1" "layer 2" etc outputs, and it will indicate progress in pushing. This can take minutes, depending on how large your container is.</p>
+<p>If the <strong>push fails</strong>, you will get a message about "Waiting for layer". This usually means it cannot find the repository, so double-check that there is no typo, and that you have set your <a href="#set-aws-environment-variables">AWS environment variables</a> since you opened the terminal most recently.</p>
+<h3 id="completion">Completion<a class="headerlink" href="#completion" title="Permanent link">¶</a></h3>
+<p>Once the push completes, your Docker image will be available in the ECR repository. It will be scanned, and if it's safe, CTDS will move it to the nextflow-approved repo. When it's available in nextflow-approved, User Services will share a docker URI that looks something like this:
+<code>143731057154.dkr.ecr.us-east-1.amazonaws.com/nextflow-approved/&lt; your username &gt;:&lt; image-tag &gt;</code>. You can then use this new URI to run workflows with your container.</p>
+<h2 id="support">Support<a class="headerlink" href="#support" title="Permanent link">¶</a></h2>
+<p>If you encounter any issues or require assistance, please reach out to the User Services team that provided you with the temporary credentials, or brhsupport@datacommons.io, or reach out on Slack.</p></div>
 
 
 

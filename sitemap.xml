@@ -90,4 +90,29 @@
          <lastmod>2023-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
+    <url>
+         <loc>https://brh.data-commons.org/nextflow-create-docker/</loc>
+         <lastmod>2023-12-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://brh.data-commons.org/nextflow-getting-started/</loc>
+         <lastmod>2023-12-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://brh.data-commons.org/nextflow-request-creds/</loc>
+         <lastmod>2023-12-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://brh.data-commons.org/nextflow-tutorial%20workflows/</loc>
+         <lastmod>2023-12-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://brh.data-commons.org/nextflow-upload-docker/</loc>
+         <lastmod>2023-12-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
 </urlset>
