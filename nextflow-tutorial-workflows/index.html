@@ -8,13 +8,9 @@
       
       
       
-        <link rel="canonical" href="https://brh.data-commons.org/nextflow-tutorial%20workflows/">
+        <link rel="canonical" href="https://brh.data-commons.org/nextflow-tutorial-workflows/">
       
       
-        <link rel="prev" href="../nextflow-getting-started/">
-      
-      
-        <link rel="next" href="../nextflow-create-docker/">
       
       
       <link rel="icon" href="../img/favicon.ico">
@@ -22,7 +18,7 @@
     
     
       
-        <title>Nextflow - Tutorial Workflows - Biomedical Research Hub Documentation</title>
+        <title>Nextflow tutorial workflows - Biomedical Research Hub Documentation</title>
       
     
     
@@ -114,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Nextflow - Tutorial Workflows
+              Nextflow tutorial workflows
             
           </span>
         </div>
@@ -721,8 +717,6 @@
       
   
   
-    
-  
   
     
     
@@ -741,12 +735,12 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
         
           
           <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
@@ -760,7 +754,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             
@@ -791,29 +785,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Nextflow - Tutorial Workflows
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../nextflow-tutorial workflows.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -822,33 +796,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#get-set-download-necessary-credentials-and-software" class="md-nav__link">
-    Get set: Download necessary credentials and software
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -952,6 +899,33 @@
     Get set: Download necessary credentials and software
   </a>
   
+    <nav class="md-nav" aria-label="Get set: Download necessary credentials and software">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#midrc-credentials" class="md-nav__link">
+    MIDRC credentials
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-and-replace-placeholder-values-in-the-nextflow-config" class="md-nav__link">
+    Get and replace placeholder values in the Nextflow config
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tutorial-1-test-running-nextflow-and-aws-batch-workflow-in-existing-docker-container-to-get-midrc-image-files-convert-them-to-png-and-extract-the-metadata" class="md-nav__link">
+    Tutorial 1: Test running Nextflow and AWS Batch workflow in existing Docker container to get MIDRC image files, convert them to PNG, and extract the metadata
+  </a>
+  
 </li>
       
     </ul>
@@ -974,8 +948,16 @@
 
 <div><p><a href="https://www.nextflow.io/"><img alt="Nextflow logo" src="../img/nextflow.svg" style="height:75px"></a></p>
 <h1 id="tutorial-nextflow-workflows"><strong>Tutorial Nextflow Workflows</strong><a class="headerlink" href="#tutorial-nextflow-workflows" title="Permanent link">¶</a></h1>
+<p>Work in progress - working from <a href="https://docs.google.com/document/d/1GV9xR56I_9_QyuARs8RZzxKK3duw_bC038XMNr0YImo/edit?usp=sharing_0">this document</a></p>
 <h2 id="get-set-download-necessary-credentials-and-software">Get set: Download necessary credentials and software<a class="headerlink" href="#get-set-download-necessary-credentials-and-software" title="Permanent link">¶</a></h2>
-<p>Be ready to execute the tutorial workflows below by gathering credentials and installing necessary software.</p></div>
+<p>Be ready to execute the tutorial workflows below by gathering credentials and installing necessary software.</p>
+<h3 id="midrc-credentials"><strong>MIDRC credentials</strong><a class="headerlink" href="#midrc-credentials" title="Permanent link">¶</a></h3>
+<p>You need to generate a MIDRC credentials on the profile page of the <a href="https://data.midrc.org/">MIDRC portal</a> to download GUIDs in the workspace. For this, please go to <a href="https://data.midrc.org/">data.midrc.org</a>, click on the user icon in the right corner (#1), and open the Profile page (#2). Click on Create API Key (#3). A pop-up window will appear with the key. If you scroll down slightly, you can see the button to download the credentials as a JSON. Credentials are valid for 1 month.</p>
+<p><img alt="Screenshot showing how to find and save MIDRC credentials" src="../img/MIDRC-credentials.png"></p>
+<h3 id="get-and-replace-placeholder-values-in-the-nextflow-config">Get and replace placeholder values in the Nextflow config<a class="headerlink" href="#get-and-replace-placeholder-values-in-the-nextflow-config" title="Permanent link">¶</a></h3>
+<p>Once you have launched the nextflow workspace for the first time, please ping @Sai or @Ao on Slack so they can give you the values to replace the placeholders in the<code>queue</code>, <code>jobRole</code> and <code>workDir</code> fields in the <a href="https://github.com/uc-cdis/bio-nextflow/blob/feature/gpu_test/nextflow_notebooks/midrc_demo_notebooks/midrc_batch_cpu_demo.ipynb">midrc_batch_cpu_demo notebook</a>. For now, these placeholder values will need to be replaced manually, but we are working on pre-populating these values in our configs.</p>
+<h2 id="tutorial-1-test-running-nextflow-and-aws-batch-workflow-in-existing-docker-container-to-get-midrc-image-files-convert-them-to-png-and-extract-the-metadata">Tutorial 1: Test running Nextflow and AWS Batch workflow in existing Docker container to get MIDRC image files, convert them to PNG, and extract the metadata<a class="headerlink" href="#tutorial-1-test-running-nextflow-and-aws-batch-workflow-in-existing-docker-container-to-get-midrc-image-files-convert-them-to-png-and-extract-the-metadata" title="Permanent link">¶</a></h2>
+<p>Please see code snippet below that shows an example of how to run two basic processes on DICOM files on AWS Batch: i) convert to PNG, ii) extract metadata. Note that to run this, you need to first download open-access DICOM files first to your workspace using the Gen3 SDK (PART 1), and you can stage the files on AWS Batch and run the workflow (PART 2)</p></div>
 
 
 

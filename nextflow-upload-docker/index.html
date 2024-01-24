@@ -791,7 +791,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nextflow-tutorial%20workflows/" class="md-nav__link">
+      <a href="../nextflow-tutorial workflows.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1137,8 +1137,7 @@
 <h3 id="timing">Timing<a class="headerlink" href="#timing" title="Permanent link">¶</a></h3>
 <p>Your temporary AWS credentials only lasts for 1 hour from when they were created; User Services should have provided an expiration time when sharing the credentials with you. You must fully complete the push to ECR before they expire, or you will need to request new credentials from User Services.</p>
 <h3 id="set-aws-environment-variables">Set AWS Environment Variables:<a class="headerlink" href="#set-aws-environment-variables" title="Permanent link">¶</a></h3>
-<p>Before you can push your Docker image to the ECR repository, you need to configure the AWS CLI with the temporary credentials you received. Here's how you can do that:</p>
-<p>Replace <code>&lt; AccessKeyId &gt;</code>, <code>&lt; SecretAccessKey &gt;</code>, and <code>&lt; SessionToken &gt;</code> with the credentials provided to you.</p>
+<p>Before you can push your Docker image to the ECR repository, you need to configure the AWS CLI with the temporary credentials you received. In the credentials sent to you, there should be the commands needed to run this below the line "Please run the following commands to set your AWS credentials:". Copy those (they will look similar to the block below) and run them in the terminal.</p>
 <pre><code>  export AWS_ACCESS_KEY_ID=&lt;AccessKeyId&gt;
   export AWS_SECRET_ACCESS_KEY=&lt;SecretAccessKey&gt;
   export AWS_SESSION_TOKEN=&lt;SessionToken&gt;
@@ -1149,10 +1148,9 @@
 <h3 id="verify-configuration">Verify Configuration:<a class="headerlink" href="#verify-configuration" title="Permanent link">¶</a></h3>
 <p>Run <code>aws sts get-caller-identity</code> to verify that your CLI is using the temporary credentials.</p>
 <h3 id="logging-in-to-ecr">Logging in to ECR<a class="headerlink" href="#logging-in-to-ecr" title="Permanent link">¶</a></h3>
-<p>Use the AWS CLI to retrieve an authentication token and authenticate your Docker client to your registry.</p>
+<p>Next, use the AWS CLI to retrieve an authentication token and authenticate your Docker client to your registry. in the credentials, there is a command below the line "After setting credentials you will need to log in to your docker registry. Please run the following command:" Copy that (it will look similar to the command below) and run it in the terminal.</p>
 <pre><code> aws ecr get-login-password --region &lt;region&gt; | docker login --username AWS --password-stdin &lt;repositoryUri&gt;
 </code></pre>
-<p>Replace <code>&lt; region &gt;</code> with <code>us-east-1</code>, and <code>&lt; repositoryUri &gt;</code> with the URI of the ECR repository you've been given access to.</p>
 <h2 id="pushing-your-docker-image">Pushing Your Docker Image<a class="headerlink" href="#pushing-your-docker-image" title="Permanent link">¶</a></h2>
 <h3 id="tag-your-docker-image">Tag Your Docker Image:<a class="headerlink" href="#tag-your-docker-image" title="Permanent link">¶</a></h3>
 <p>Tag your local Docker image with the ECR repository URI and the image tag you want to use.</p>
@@ -1170,7 +1168,7 @@ If you do not want to overwrite, you can use versioned image-tags. For example: 
 If you want to replace previous versions of your container, you can use the same image-tag.</p>
 </blockquote>
 <h3 id="push-the-image">Push the Image:<a class="headerlink" href="#push-the-image" title="Permanent link">¶</a></h3>
-<p>Push the tagged image to the ECR repository.</p>
+<p>Push the tagged image to the ECR repository. (The command is also in the credentials - you just need to specify the image tag.)</p>
 <pre><code> docker push &lt;repositoryUri&gt;:&lt;image-tag&gt;
 </code></pre>
 <p>If the <strong>push is successful</strong>, you will see various "layer 1" "layer 2" etc outputs, and it will indicate progress in pushing. This can take minutes, depending on how large your container is.</p>
