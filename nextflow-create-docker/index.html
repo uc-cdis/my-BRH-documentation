@@ -11,7 +11,7 @@
         <link rel="canonical" href="https://brh.data-commons.org/nextflow-create-docker/">
       
       
-        <link rel="prev" href="../nextflow-tutorial-workflows/">
+        <link rel="prev" href="../nextflow-getting-started/">
       
       
         <link rel="next" href="../nextflow-request-creds/">
@@ -77,6 +77,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#create-a-dockerfile" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -786,26 +791,6 @@
                 
   
   
-  
-    <li class="md-nav__item">
-      <a href="../nextflow-tutorial-workflows/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Nextflow - Tutorial Workflows
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
     
   
   
@@ -814,6 +799,19 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Nextflow - Create Dockerfile
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -824,6 +822,32 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview-of-developing-and-deploying-a-container-in-gen3" class="md-nav__link">
+    Overview of developing and deploying a container in Gen3
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -860,7 +884,27 @@
         
   
   <span class="md-ellipsis">
-    Nextflow - Upload Dockerfile
+    Nextflow - Upload Docker Image
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nextflow-tutorial-workflows/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nextflow - Tutorial Workflows
   </span>
   
 
@@ -894,6 +938,23 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview-of-developing-and-deploying-a-container-in-gen3" class="md-nav__link">
+    Overview of developing and deploying a container in Gen3
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -911,9 +972,21 @@
   
 
 
-  <h1>Nextflow - Create Dockerfile</h1>
-
-<p>enter info here from <a href="https://docs.google.com/document/d/1v02oDuXjwmw7nV_KjpNik2rGsNPlNU87gqlg54WbLK8/edit?usp=sharing">this doc</a></p>
+<div><p><a href="https://www.nextflow.io/"><img alt="Nextflow logo" src="../img/nextflow.svg" style="height:75px"></a></p>
+<h1 id="create-a-dockerfile"><strong>Create a Dockerfile</strong><a class="headerlink" href="#create-a-dockerfile" title="Permanent link">¶</a></h1>
+<h2 id="overview-of-developing-and-deploying-a-container-in-gen3">Overview of developing and deploying a container in Gen3<a class="headerlink" href="#overview-of-developing-and-deploying-a-container-in-gen3" title="Permanent link">¶</a></h2>
+<p><img alt="Overview of steps in developing a container and making it available for use in workflows" src="../img/container-development.png"></p>
+<p><strong>Locally build and test container:</strong>
+Gen3 provides several FedRAMP security-compliant base images that users can pull and customize.</p>
+<p><strong>Request credentials and push container to Gen3 staging:</strong>
+Users can email Gen3 to request short-term credentials that permit them to authenticate Docker in their terminal to upload the local image to Gen3 staging for security review.</p>
+<p><strong>Container is security-scanned; Gen3 sends approved container URI:</strong>
+Gen3 completes the security scan within minutes. If it is compliant, the image is moved to an ECR repo from where the container can be run, and Gen3 staff will send a container URI. If there are problems, a report of the vulnerabilities is provided for remediation and resubmission.</p>
+<p><strong>Run workflow using approved container URI:</strong>
+In the BRH workspace, use a Nextflow Jupyter notebook to run Nextflow workflows in the approved container using the approved container URI.</p>
+<hr>
+<p><em>enter more info here from <a href="https://docs.google.com/document/d/1v02oDuXjwmw7nV_KjpNik2rGsNPlNU87gqlg54WbLK8/edit?usp=sharing">this doc</a></em></p>
+<p><a href="../nextflow-request-creds/"><em>Continue to Request Credentials</em></a></p></div>
 
 
 
