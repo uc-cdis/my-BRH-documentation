@@ -11,7 +11,7 @@
         <link rel="canonical" href="https://brh.data-commons.org/nextflow-create-docker/">
       
       
-        <link rel="prev" href="../nextflow-getting-started/">
+        <link rel="prev" href="../nextflow-overview-containers/">
       
       
         <link rel="next" href="../nextflow-request-creds/">
@@ -737,6 +737,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -778,6 +782,46 @@
   
   <span class="md-ellipsis">
     Nextflow - Getting Started
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nextflow-tutorial-1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nextflow - General Workflows
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nextflow-overview-containers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nextflow - Containers in Gen3
   </span>
   
 
@@ -839,8 +883,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview-of-developing-and-deploying-a-container-in-gen3" class="md-nav__link">
-    Overview of developing and deploying a container in Gen3
+  <a href="#_1" class="md-nav__link">
+    
   </a>
   
 </li>
@@ -904,7 +948,7 @@
         
   
   <span class="md-ellipsis">
-    Nextflow - Tutorial Workflows
+    Nextflow - Tutorials with Containers
   </span>
   
 
@@ -948,8 +992,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview-of-developing-and-deploying-a-container-in-gen3" class="md-nav__link">
-    Overview of developing and deploying a container in Gen3
+  <a href="#_1" class="md-nav__link">
+    
   </a>
   
 </li>
@@ -974,16 +1018,15 @@
 
 <div><p><a href="https://www.nextflow.io/"><img alt="Nextflow logo" src="../img/nextflow.svg" style="height:75px"></a></p>
 <h1 id="create-a-dockerfile"><strong>Create a Dockerfile</strong><a class="headerlink" href="#create-a-dockerfile" title="Permanent link">¶</a></h1>
-<h2 id="overview-of-developing-and-deploying-a-container-in-gen3">Overview of developing and deploying a container in Gen3<a class="headerlink" href="#overview-of-developing-and-deploying-a-container-in-gen3" title="Permanent link">¶</a></h2>
-<p><img alt="Overview of steps in developing a container and making it available for use in workflows" src="../img/container-development.png"></p>
-<p><strong>Locally build and test container:</strong>
-Gen3 provides several FedRAMP security-compliant base images that users can pull and customize.</p>
-<p><strong>Request credentials and push container to Gen3 staging:</strong>
-Users can email Gen3 to request short-term credentials that permit them to authenticate Docker in their terminal to upload the local image to Gen3 staging for security review.</p>
-<p><strong>Container is security-scanned; Gen3 sends approved container URI:</strong>
-Gen3 completes the security scan within minutes. If it is compliant, the image is moved to an ECR repo from where the container can be run, and Gen3 staff will send a container URI. If there are problems, a report of the vulnerabilities is provided for remediation and resubmission.</p>
-<p><strong>Run workflow using approved container URI:</strong>
-In the BRH workspace, use a Nextflow Jupyter notebook to run Nextflow workflows in the approved container using the approved container URI.</p>
+<h2 id="_1"><a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
+<ul>
+<li>go to <a href="https://quay.io/repository/cdis/containers?tab=tags&amp;tag=latest">quay</a>, get image</li>
+<li>gen3-cuda-12.3-ubuntu22.04-openssl - use for GPU workflows</li>
+<li>gen3-amazonlinux-base-AL2023fix  - use for CPU workflows</li>
+</ul>
+<p>click on fetch tag
+- the command is gonna be the first of your dockerfile
+- make sure you can pull the image by running the command in your terminal.</p>
 <hr>
 <p><em>enter more info here from <a href="https://docs.google.com/document/d/1v02oDuXjwmw7nV_KjpNik2rGsNPlNU87gqlg54WbLK8/edit?usp=sharing">this doc</a></em></p>
 <p><a href="../nextflow-request-creds/"><em>Continue to Request Credentials</em></a></p></div>

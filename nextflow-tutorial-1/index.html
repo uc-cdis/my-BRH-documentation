@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://brh.data-commons.org/nextflow-request-creds/">
+        <link rel="canonical" href="https://brh.data-commons.org/nextflow-tutorial-1/">
       
       
-        <link rel="prev" href="../nextflow-create-docker/">
+        <link rel="prev" href="../nextflow-getting-started/">
       
       
-        <link rel="next" href="../nextflow-upload-docker/">
+        <link rel="next" href="../nextflow-overview-containers/">
       
       
       <link rel="icon" href="../img/favicon.ico">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Nextflow - Request Credentials - Biomedical Research Hub Documentation</title>
+        <title>Nextflow - General Workflows - Biomedical Research Hub Documentation</title>
       
     
     
@@ -79,7 +79,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#request-credentials-for-uploading-a-docker-container" class="md-skip">
+        <a href="#tutorial-nextflow-workflows-no-containers" class="md-skip">
           Skip to content
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Nextflow - Request Credentials
+              Nextflow - General Workflows
             
           </span>
         </div>
@@ -795,9 +795,29 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../nextflow-tutorial-1/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Nextflow - General Workflows
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -806,6 +826,33 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#example-nextflow-notebooks" class="md-nav__link">
+    Example Nextflow notebooks
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -855,18 +902,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../nextflow-request-creds/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -875,7 +913,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -948,6 +985,21 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#example-nextflow-notebooks" class="md-nav__link">
+    Example Nextflow notebooks
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -965,24 +1017,14 @@
 
 
 <div><p><a href="https://www.nextflow.io/"><img alt="Nextflow logo" src="../img/nextflow.svg" style="height:75px"></a></p>
-<h1 id="request-credentials-for-uploading-a-docker-container"><strong>Request Credentials for Uploading a Docker Container</strong><a class="headerlink" href="#request-credentials-for-uploading-a-docker-container" title="Permanent link">¶</a></h1>
-<p><em>Please copy and paste the email template below into a new email and send to <a href="mailto:brhsupport@datacommons.io">brhsupport@datacommons.io</a>. Please be sure to add the relevant information to the bolded fields.</em></p>
-<hr>
-<p>Hello, User Services,</p>
-<p>Please create new temporary AWS credentials to permit me to upload a Nextflow container.</p>
-<p>The email address I use to log in to BRH is: <strong>[BRH login email here]</strong></p>
-<p>I understand that these credentials will last for 1 hour, once created. If I continue to need access to upload after they expire, I will request new credentials.</p>
-<p>Since the credentials will ONLY last 1 hour after creation, you may prefer we send them at a certain time of day. Please <strong>delete which of these do NOT apply</strong>:</p>
+<h1 id="tutorial-nextflow-workflows-no-containers"><strong>Tutorial Nextflow workflows - no containers</strong><a class="headerlink" href="#tutorial-nextflow-workflows-no-containers" title="Permanent link">¶</a></h1>
+<h2 id="example-nextflow-notebooks">Example Nextflow notebooks<a class="headerlink" href="#example-nextflow-notebooks" title="Permanent link">¶</a></h2>
+<p>We have a collection of notebooks using Nextflow in Gen3 here: <a href="https://github.com/uc-cdis/bio-nextflow/tree/master/nextflow_notebooks">https://github.com/uc-cdis/bio-nextflow/tree/master/nextflow_notebooks</a></p>
+<p>For this section, you will be most interested in the general Nextflow notebooks that do not use containers at all. You can find those here:</p>
 <ul>
-<li>Please generate and send my credentials tomorrow morning</li>
-<li>Please generate and send my credentials in the afternoon</li>
-<li>Please generate and send my credentials ASAP</li>
+<li><a href="https://github.com/uc-cdis/bio-nextflow/tree/master/nextflow_notebooks/non_containerized_nextflow_workflows">non_containerized_nextflow_workflows</a></li>
 </ul>
-<p>To ensure prompt attention, I will also ping <code>@Sara Volk de Garcia</code> on the Slack channel after I have sent my email.</p>
-<p>Thanks!</p>
-<p><strong>[your name]</strong></p>
-<hr>
-<p><a href="../nextflow-upload-docker/"><em>Continue to Upload Docker Image</em></a></p></div>
+<p><a href="../nextflow-overview-containers/"><em>Continue to Overview of Containers in Gen3</em></a></p></div>
 
 
 

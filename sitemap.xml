@@ -101,7 +101,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://brh.data-commons.org/nextflow-overview-containers/</loc>
+         <lastmod>2024-02-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://brh.data-commons.org/nextflow-request-creds/</loc>
+         <lastmod>2024-02-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://brh.data-commons.org/nextflow-tutorial-1/</loc>
          <lastmod>2024-02-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
