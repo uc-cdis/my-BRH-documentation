@@ -956,21 +956,14 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#get-and-replace-placeholder-values-in-the-nextflow-config" class="md-nav__link">
-    Get and replace placeholder values in the Nextflow config
+  <a href="#get-and-replace-placeholder-values-from-the-nextflow-config" class="md-nav__link">
+    Get and replace placeholder values from the Nextflow config
   </a>
   
 </li>
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tutorial-1-test-running-nextflow-and-aws-batch-workflow-in-existing-docker-container-to-get-midrc-image-files-convert-them-to-png-and-extract-the-metadata" class="md-nav__link">
-    Tutorial 1: Test running Nextflow and AWS Batch workflow in existing Docker container to get MIDRC image files, convert them to PNG, and extract the metadata
-  </a>
   
 </li>
       
@@ -1005,6 +998,13 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tutorial-1-test-running-nextflow-and-aws-batch-workflow-in-existing-docker-container-to-get-midrc-image-files-convert-them-to-png-and-extract-the-metadata" class="md-nav__link">
+    Tutorial 1: Test running Nextflow and AWS Batch workflow in existing Docker container to get MIDRC image files, convert them to PNG, and extract the metadata
+  </a>
   
 </li>
       
@@ -1066,21 +1066,14 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#get-and-replace-placeholder-values-in-the-nextflow-config" class="md-nav__link">
-    Get and replace placeholder values in the Nextflow config
+  <a href="#get-and-replace-placeholder-values-from-the-nextflow-config" class="md-nav__link">
+    Get and replace placeholder values from the Nextflow config
   </a>
   
 </li>
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tutorial-1-test-running-nextflow-and-aws-batch-workflow-in-existing-docker-container-to-get-midrc-image-files-convert-them-to-png-and-extract-the-metadata" class="md-nav__link">
-    Tutorial 1: Test running Nextflow and AWS Batch workflow in existing Docker container to get MIDRC image files, convert them to PNG, and extract the metadata
-  </a>
   
 </li>
       
@@ -1118,6 +1111,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#tutorial-1-test-running-nextflow-and-aws-batch-workflow-in-existing-docker-container-to-get-midrc-image-files-convert-them-to-png-and-extract-the-metadata" class="md-nav__link">
+    Tutorial 1: Test running Nextflow and AWS Batch workflow in existing Docker container to get MIDRC image files, convert them to PNG, and extract the metadata
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1143,10 +1143,9 @@
 <h3 id="midrc-credentials"><strong>MIDRC credentials</strong><a class="headerlink" href="#midrc-credentials" title="Permanent link">¶</a></h3>
 <p>You need to generate a MIDRC credentials on the profile page of the <a href="https://data.midrc.org/">MIDRC portal</a> to download GUIDs in the workspace. For this, please go to <a href="https://data.midrc.org/">data.midrc.org</a>, click on the user icon in the right corner (#1), and open the Profile page (#2). Click on Create API Key (#3). A pop-up window will appear with the key. If you scroll down slightly, you can see the button to download the credentials as a JSON. Credentials are valid for 1 month.</p>
 <p><img alt="Screenshot showing how to find and save MIDRC credentials" src="../img/MIDRC-credentials.png"></p>
-<h3 id="get-and-replace-placeholder-values-in-the-nextflow-config">Get and replace placeholder values in the Nextflow config<a class="headerlink" href="#get-and-replace-placeholder-values-in-the-nextflow-config" title="Permanent link">¶</a></h3>
-<p>Once you have launched the nextflow workspace for the first time, please ping @Sai or @Ao on Slack so they can give you the values to replace the placeholders in the<code>queue</code>, <code>jobRole</code> and <code>workDir</code> fields in the <a href="https://github.com/uc-cdis/bio-nextflow/blob/feature/gpu_test/nextflow_notebooks/midrc_demo_notebooks/midrc_batch_cpu_demo.ipynb">midrc_batch_cpu_demo notebook</a>. For now, these placeholder values will need to be replaced manually, but we are working on pre-populating these values in our configs.</p>
-<h2 id="tutorial-1-test-running-nextflow-and-aws-batch-workflow-in-existing-docker-container-to-get-midrc-image-files-convert-them-to-png-and-extract-the-metadata">Tutorial 1: Test running Nextflow and AWS Batch workflow in existing Docker container to get MIDRC image files, convert them to PNG, and extract the metadata<a class="headerlink" href="#tutorial-1-test-running-nextflow-and-aws-batch-workflow-in-existing-docker-container-to-get-midrc-image-files-convert-them-to-png-and-extract-the-metadata" title="Permanent link">¶</a></h2>
-<p>Please see code snippet below that shows an example of how to run two basic processes on DICOM files on AWS Batch: i) convert to PNG, ii) extract metadata. Note that to run this, you need to first download open-access DICOM files first to your workspace using the Gen3 SDK (PART 1), and you can stage the files on AWS Batch and run the workflow (PART 2)</p>
+<h3 id="get-and-replace-placeholder-values-from-the-nextflow-config">Get and replace placeholder values from the Nextflow config<a class="headerlink" href="#get-and-replace-placeholder-values-from-the-nextflow-config" title="Permanent link">¶</a></h3>
+<p>You can find the values to replace the placeholders in the<code>queue</code>, <code>jobRole</code> and <code>workDir</code> fields in the <code>nextflow.config</code> file in your Nextflow workspace. Directions for finding this file are at the bottom of the "Welcome to Nextflow" page that opens when your Nextflow workspace first opens. These placeholder values will need to be replaced in each of the various tutorial Nextflow notebooks.</p>
+<p>Note that you should only copy/paste the value to replace <code>placeholder</code> for each field; do not copy/paste larger sections of the nextflow config, or there could be indentation problems that interfere with the code.</p>
 <h2 id="example-nextflow-notebooks">Example Nextflow notebooks<a class="headerlink" href="#example-nextflow-notebooks" title="Permanent link">¶</a></h2>
 <p>We have a collection of notebooks using Nextflow in Gen3 here: <a href="https://github.com/uc-cdis/bio-nextflow/tree/master/nextflow_notebooks">https://github.com/uc-cdis/bio-nextflow/tree/master/nextflow_notebooks</a></p>
 <p>For this section, you will be most interested in:</p>
@@ -1162,7 +1161,9 @@
 <p>For container building, see Dockerfile and requirements file, python code to containerize, and a similar README as above. For running workflows there's a python notebook (torch_cuda_batch_template.ipynb) with additional desc in README</p>
 <h3 id="containerized-cpu-workflow-example">Containerized cpu workflow example<a class="headerlink" href="#containerized-cpu-workflow-example" title="Permanent link">¶</a></h3>
 <p>Link to notebook here: <a href="https://github.com/uc-cdis/bio-nextflow/tree/master/nextflow_notebooks/containerized_cpu_workflows/midrc_batch_demo">https://github.com/uc-cdis/bio-nextflow/tree/master/nextflow_notebooks/containerized_cpu_workflows/midrc_batch_demo</a></p>
-<p>Has same stuff as above and a README <a href="https://github.com/uc-cdis/bio-nextflow/blob/master/nextflow_notebooks/containerized_cpu_workflows/README">here</a> that describes two workflows: one local download workflow, and one batch workflow</p></div>
+<p>Has same stuff as above and a README <a href="https://github.com/uc-cdis/bio-nextflow/blob/master/nextflow_notebooks/containerized_cpu_workflows/README">here</a> that describes two workflows: one local download workflow, and one batch workflow</p>
+<h2 id="tutorial-1-test-running-nextflow-and-aws-batch-workflow-in-existing-docker-container-to-get-midrc-image-files-convert-them-to-png-and-extract-the-metadata">Tutorial 1: Test running Nextflow and AWS Batch workflow in existing Docker container to get MIDRC image files, convert them to PNG, and extract the metadata<a class="headerlink" href="#tutorial-1-test-running-nextflow-and-aws-batch-workflow-in-existing-docker-container-to-get-midrc-image-files-convert-them-to-png-and-extract-the-metadata" title="Permanent link">¶</a></h2>
+<p>Please see code snippet below that shows an example of how to run two basic processes on DICOM files on AWS Batch: i) convert to PNG, ii) extract metadata. Note that to run this, you need to first download open-access DICOM files first to your workspace using the Gen3 SDK (PART 1), and you can stage the files on AWS Batch and run the workflow (PART 2)</p></div>
 
 
 
